@@ -1,0 +1,42 @@
+.footer__web{
+    font-family: Raleway;
+    font-weight: $bold;
+    font-size: 26px;
+    line-height: 1.19;
+    color: $accent-color;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer {    
+    background-color: $footer-color;
+    padding: 60px 0;
+}
+
+.footer__flex{
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__container{
+   margin-right: 70px;
+}
+
+.footer__item:not(:first-child){
+    margin-top: 9px;
+}
+
+.footer__map{    
+    color: $white;
+}
+.footer__address{    
+    color: var(--transparent-text-color);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+.studio-footer {
+    color: $white;
+}

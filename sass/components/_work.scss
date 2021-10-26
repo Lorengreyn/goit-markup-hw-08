@@ -1,8 +1,8 @@
-.our-work{
+.section__our-work{
     padding-top: 0px;
 }
 
-.heading{
+.section__title{
     color: $text-bold-color;
     font-weight: $bold;
     font-size: 36px;
@@ -11,29 +11,29 @@
     margin-bottom: 50px;
 }
 
-.heading__list{
+.our-work{
     display: flex;
 }
 
-.heading__item{
+.our-work__item{
     flex-basis: calc(100% / 3 - 30px);
 }
 
-.heading__item{
+.our-work__item{
     &:not(:last-child){
     margin-right: 30px;
     }
 }
 
-.heading__pudding{
+.our-work__pudding{
     padding-top: 0;
 }
 
-.item__subtitle{
+.our-work__box{
     display: flex;
     position: relative;
 }
-.subtitle__text{
+.our-work__text{
     display: flex;
     justify-content: center;
     align-items: center;

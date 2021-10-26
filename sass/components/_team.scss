@@ -1,4 +1,4 @@
-.our-team{
+.section__team{
     background-color: $gray-background;
 }
 .team{
@@ -13,27 +13,27 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-.team__member{
+.team__title{
     font-size: 16px;
     line-height: 1.19;
-    font-weight: $regular;
+    font-weight: $bold;
     color: $text-bold-color;
     text-align: center;
     letter-spacing: 0.03em;
 }
 
-.team__margin{
+.team__box{
     padding: 30px 0;
 }
 
-.team__job{
+.team__text{
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     margin-top: 10px;
 }
 
-.team__social{
+.social{
     display: flex;
     justify-content: center;
     margin-top: 16px;

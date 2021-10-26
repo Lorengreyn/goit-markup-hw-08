@@ -1,7 +1,7 @@
 .header,
-.nav__ul,
+.nav,
 .header__nav,
-.header__adress,
+.adress,
 .header__container,
 .adress__link,
 .adres__item
@@ -31,7 +31,7 @@
     
 }
 
-.current{
+.nav__current{
     color: $accent-color;
     &:after{
         content:'' ;
@@ -72,7 +72,7 @@
     }
 }
 
-.header__adress{
+.adress{
     margin-left: auto;
 }
 

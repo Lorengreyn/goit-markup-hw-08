@@ -1,18 +1,18 @@
 .clients {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
-  .client__item:not(:last-child) {
+
+.clients__item{
+  
+  &:not(:last-child) {
     margin-right: 30px;
-  }
-  .clients__text {
-    font-style: normal;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    margin-bottom: 50px;
-    color: $text-bold-color;
-  }
-.clients__icon {
+}
+
+}
+  
+.clients__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,17 +27,14 @@
     border-color: $accent-color;
   }
 }
-  .client__svg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .clients__icon {
     width: 106px;
     height: 60px;
     fill: #AFB1B8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .clients__icon:focus &,
-    .clients__icon:hover &{
+    &:focus,
+    &:hover{
       fill: $accent-color;
     }
   }

@@ -1,39 +1,112 @@
 .hero{
+  display: flex;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+      align-items: center;
+      justify-content: center;
+     margin: 0 auto;
+    padding: 118px 60px 118px 60px;
     background-color: $footer-color;
     max-width: 1600px;
-    height: 600px;
-    margin: 0 auto;
+    min-width: 320px;
+    height: 400px;    
+    background-color: $footer-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/backgraund.jpg");
-    background-color: $footer-color;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    url("../images/backgraund-m-@1x.jpg");
+  
+    
+   
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+       
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/backgraund-m-@2x.jpg");
+    
+  }
+
+
+    @media screen and (min-width: 768px) {
+      
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/backgraund-t-@1x.jpg");
+    }
+  
+    @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      
+    background-image: linear-gradient( to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+  url("../images/backgraund-t-@2x.jpg");
+    
+  }
+
+
+    @media screen and (min-width: 1200px) {
+      
+      height: 600px;  
+    background-image: linear-gradient( to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/backgraund-d-@1x.jpg");
+    
+    }
+  
+
+    @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx){
+      
+      height: 600px;
+     
+      background-image: linear-gradient(
+      to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+    url("../images/backgraund-d-@2x.jpg");
+    
+    }
 }
 
+
+
 .hero__title {
-    font-weight: 900;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.38;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $white;
+  @media screen and (min-width: 1199px) {
     font-size: 44px;
     line-height: 1.36;
-    letter-spacing: 0.06em;
-    color: $white;
-    text-align: center;
-    text-transform: uppercase;
-    width: 696px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
+  }
 }
 
 .hero__button{
+  margin-left: auto;
+  margin-right: auto;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     width: 200px;
@@ -41,7 +114,7 @@
     font-family: inherit;
     font-weight: $regular;
     font-size: 16px;
-    line-height: 1.875;
+    line-height: 1.6;
     letter-spacing: 0.06em;
     cursor: pointer;
     background-color: $accent-color;
@@ -56,5 +129,8 @@
                 &:hover,
                 &:focus{
                     background-color: $hero-button-hover-color;
+                }
+                @media screen and (min-width: 1199px) {
+                  line-height: 1.875;
                 }
 }

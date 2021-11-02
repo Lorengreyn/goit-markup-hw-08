@@ -47,13 +47,24 @@
           </svg>
           +38 096 111 11 11</a></li>
       </ul>
+<button type="button" class="menu__open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+  <svg class="menu__open-icon" width="40" height="40">
+    <use href="./images/icons.svg#menu-open"></use>
+  </svg>
+</button>
+     
     </div>
+    
+
+    
 </header>
 <main>
     <!-- Hero -->
 <section class="hero">
   <div class="container">
-    <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+    <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
     <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
   </div>
 </section>
@@ -77,19 +88,19 @@
                 <use href="./images/icons.svg#clock"></use>
               </svg>
             </div>
-               <h3 class="feature__title">Пунктуальность</h3>
-               <p class="feature__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+               <h3 class="features__title">Пунктуальность</h3>
+               <p class="features__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
-           <li class="feature__item">
-            <div class="features__box">
+            <li class="features__item">
+              <div class="features__box">
               <svg class="features__icon">
                 <use href="./images/icons.svg#diagram"></use>
               </svg>
             </div>
-               <h3 class="feature__title">Планирование</h3>
-               <p class="feature__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+               <h3 class="features__title">Планирование</h3>
+               <p class="features__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
-           <li class="feature__item">
+           <li class="features__item">
             <div class="features__box">
               <svg class="features__icon">
                 <use href="./images/icons.svg#astronaut"></use>
@@ -107,21 +118,21 @@
         <h2 class="section__title">Чем мы занимемся</h2>
         <ul class="our-work">
             <li class="our-work__item">
-              <img src="./images/img_code.jpg" width="370" height="294" alt="ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ">
+              <img srcset="./images/img_code-d-@1x.jpg 1x, ./images/img_code-d-@2x.jpg 2x" width="370" height="294" src="./images/img_code-d-@1x.jpg" alt="ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ">
               <div class="our-work__box">
                 <p class="our-work__text">Десктопные приложения</p>
               </div>
             </li>
             
             <li class="our-work__item">
-              <img src="./images/box2.jpg" width="370" height="294" alt="МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ">
+              <img srcset="./images/box2-d-@1x.jpg 1x, ./images/box2-d-@1x.jpg 2x" src="./images/box2-d-@1x.jpg" width="370" height="294" alt="МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ">
               <div class="our-work__box">
                 <p class="our-work__text">Мобильные приложения</p>
               </div>
             </li>
             
             <li class="our-work__item">
-              <img src="./images/box3.jpg" width="370" height="294" alt="ДИЗАЙНЕРСКИЕ РЕШЕНИЯ">
+              <img srcset="./images/box3-d-@1x.jpg 1x, ./images/box3-d-@1x.jpg 2x" src="./images/box3-d-@1x.jpg" width="370" height="294" alt="ДИЗАЙНЕРСКИЕ РЕШЕНИЯ">
               <div class="our-work__box">
                 <p class="our-work__text">Дизайнерские решения</p>
               </div>
@@ -136,12 +147,15 @@
         <h2 class="section__title">Наша команда</h2>
         <ul class='team'>
           <li class="team__item">
+            <picture>
+              <source srcset="./images/igor-m-@1x.jpg 1x, ./images/igor-m-@2x.jpg 2x" media="(max-width: 767px)" sizes="(min-width: 480px) 480px, 94vw"/>
+              <source srcset="./images/igor-t-@1x.jpg 1x, ./images/igor-t-@2x.jpg 2x" media="(max-width: 1199px)" sizes="(min-width: 768px) 768px, 46vw" />
+              <source srcset="./images/igor-d-@1x.jpg 1x, ./images/igor-d-@2x.jpg 2x" media="(min-width:1200px)"/>
             <img
-              src="./images/igor.jpg"
-              width="270"
-              height="260"
+              src="./images/igor-d-@1x.jpg"
               alt="Игорь Демьяненко"
             />
+            </picture>
             <div class="team__box">
             <h3 class="team__title">Игорь Демьяненко</h3>
             <p class="team__text">Product Designer</p>
@@ -178,12 +192,15 @@
           </div>
           </li>
           <li class="team__item">
+            <picture>
+              <source srcset="./images/olha-m-@1x.jpg 1x, ./images/olha-m-@2x.jpg 2x" media="(max-width: 767px)" sizes="(min-width: 480px) 480px, 94vw"/>
+              <source srcset="./images/olha-t-@1x.jpg 1x, ./images/olha-t-@2x.jpg 2x" media="(max-width: 1199px)" sizes="(min-width: 768px) 768px, 46vw" />
+              <source srcset="./images/olha-d-@1x.jpg 1x, ./images/olha-d-@2x.jpg 2x" media="(min-width:1200px)"/>
             <img
-              src="./images/olha.jpg"
-              width="270"
-              height="260"
+              src="./images/olha-d-@1x.jpg"
               alt="Ольга Репина"
             />
+            </picture>
             <div class="team__box">
             <h3 class="team__title">Ольга Репина</h3>
             <p class="team__text">Frontend Developer</p>
@@ -221,12 +238,15 @@
           </li>
 
           <li class="team__item">
+            <picture>
+              <source srcset="./images/nikolay-m-@1x.jpg 1x, ./images/nikolay-m-@2x.jpg 2x" media="(max-width: 767px)" sizes="(min-width: 480px) 480px, 94vw"/>
+              <source srcset="./images/nikolay-t-@1x.jpg 1x, ./images/nikolay-t-@2x.jpg 2x" media="(max-width: 1199px)" sizes="(min-width: 768px) 768px, 46vw" />
+              <source srcset="./images/nikolay-d-@1x.jpg 1x, ./images/nikolay-d-@2x.jpg 2x" media="(min-width:1200px)"/>
             <img
-              src="./images/nikolay.jpg"
-              width="270"
-              height="260"
+              src="./images/nikolay-d-@1x.jpg"              
               alt="Николай Тарасов"
             />
+            </picture>
             <div class="team__box">
             <h3 class="team__title">Николай Тарасов</h3>
             <p class="team__text">Marketing</p>
@@ -263,12 +283,15 @@
           </div>
           </li>
           <li class="team__item">
+            <picture>
+              <source srcset="./images/mihail-m-@1x.jpg 1x, ./images/mihail-m-@2x.jpg 2x" media="(max-width: 767px)" sizes="(min-width: 480px) 480px, 94vw"/>
+              <source srcset="./images/mihail-t-@1x.jpg 1x, ./images/mihail-t-@2x.jpg 2x" media="(max-width: 1199px)" sizes="(min-width: 768px) 768px, 46vw" />
+              <source srcset="./images/mihail-d-@1x.jpg 1x, ./images/mihail-d-@2x.jpg 2x" media="(min-width:1200px)"/>
             <img
-              src="./images/mihail.jpg"
-              width="270"
-              height="260"
+              src="./images/mihail-d-@1x.jpg"              
               alt="Михаил Ермаков"
             />
+            </picture>
             <div class="team__box">
             <h3 class="team__title">Михаил Ермаков</h3>
             <p class="team__text">UI Designer</p>
@@ -361,8 +384,9 @@
     </section>
 </main>
 <!-- Footer -->
-<footer class="footer">
+<footer class="footer">  
   <div class="footer__flex container">
+    <div class="footer__row">
     <div class="footer__container">
     <a href="./index.html" class="footer__web">
       Web<span class="studio-footer">Studio</span>
@@ -413,7 +437,8 @@
           </a>
         </li>
       </ul>
-    </div>
+  </div>
+</div>
    <div class="footer__email-box">
      <p class="footer__email-text">Подпишитесь на рассылку</p>
     <form class="footer__email-form" name="signup_form" autocomplete="off" novalidate>
@@ -479,8 +504,55 @@
     </form>
   </div>
   
+  
+</div>
+<div class="menu js-menu-container">
+  <button type="button" class="menu__close js-close-menu">
+    <svg class="menu__close-icon" width="40" height="40">
+      <use href="./images/icons.svg#menu-close"></use>
+    </svg>
+  </button>
+  <div class="menu__container">
+  <ul  class="menu__nav">
+    <li class="menu__item"><a class='menu__link menu__current' href="./index.html">Студия</a></li>
+    <li class="menu__item"><a class='menu__link' href="./portfolio.html">Портфолио</a></li>
+    <li class="menu__item"><a class='menu__link' href="">Контакты</a></li>
+  </ul>
+
+  <ul class="menu__contacts">
+    <li class="contacts__item-tel">
+      <a class='contacts__link' href="tel:+380961111111">+38 096 111 11 11</a>
+    </li>
+    <li class="contacts__item-email">
+      <a class='contacts__link' href="mailto:info@devstudio.com">info@devstudio.com</a>
+    </li>
+    
+  </ul>
+
+  <ul class="menu__socials">
+    <li class="menu__socials-item">
+        <a href="https://www.instagram.com" class="menu__socials-link link" target="_blank" rel="noopener noneferrer">Instagram</a>
+    </li>
+    <li class="menu__socials-item">
+        <a href="https://twitter.com" class="menu__socials-link link" target="_blank" rel="noopener noneferrer">Twitter</a>
+    </li>
+    <li class="menu__socials-item">
+        <a href="https://www.facebook.com" class="menu__socials-link link" target="_blank" rel="noopener noneferrer">Facebook</a>
+    </li>
+    <li class="menu__socials-item">
+        <a href="https://www.linkedin.com" class="menu__socials-link link" target="_blank" rel="noopener noneferrer">Linkedin</a>
+    </li>
+</ul>
 </div>
 </div>
-  <script src="./js/modal.js"></script>
+
+<script src="./js/modal.js"></script>
+<script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+<script src="./mobile-menu.js"></script>
 </body>
 </html>

@@ -1052,7 +1052,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .footer__box {
-    margin-bottom: none;
+    margin-bottom: 0;
   }
 }
 
@@ -1128,6 +1128,7 @@ button {
 @media screen and (min-width: 1200px) {
   .footer__email-box {
     margin-left: auto;
+    align-items: unset;
   }
 }
 

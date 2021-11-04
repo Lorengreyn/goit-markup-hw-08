@@ -1,19 +1,24 @@
 .modal{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
     padding: 40px;
-    width: 528px;
-    min-height: 581px;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 609px;
     background-color: $white;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     position: relative;
-    transform:scale(1) translateY(50px);
+    transform:translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media (max-width: 479px) {
+        width: calc(100% - 15px);
+      }
+      @media (min-width: 1200px) {
+        width: 528px;
+      }
 }
 
 .modal__button-close{

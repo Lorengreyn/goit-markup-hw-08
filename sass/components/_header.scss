@@ -1,7 +1,6 @@
 .header,
 .nav,
 .header__nav,
-.adress,
 .header__container
 {
     display: flex;
@@ -10,7 +9,7 @@
 
 .header {
     height: 60px;
-    border-bottom: 1px solid var(--header-line-color);
+    border-bottom: 1px solid $header-line-color;
     @media screen and (min-width:768px){
         height: 80px;        
     }
@@ -21,8 +20,7 @@
 }
 
  .nav{
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; 
     opacity: 0;
     @media screen and (min-width: 768px) {
       opacity: 1;
@@ -62,7 +60,8 @@
     }
 }
 
-.adress__link{    
+.adress__link{
+    display: inline-flex;    
     font-weight: 500;
     letter-spacing: 0.02em;    
     font-size: 14px;
@@ -95,28 +94,29 @@
 }
 
 .adress{    
-    flex-direction: column;    
-    align-items: flex-start;
+    display: block;
     margin-left: auto;
     @media screen and (max-width: 767px) {
         display: none;
       }
       @media screen and (min-width: 1200px) {
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
+        display: flex;  
         opacity: 1;
       }
 }
 
 .adress__item{
     margin-left: 0;
-    
-    @media screen and (min-width: 1200px) {
-    &:not(:last-child){
-        margin-right: 50px;
+    @media screen and (max-width: 1199px) {
+        &:not(:last-child) {
+        margin-bottom: 10px;
+        }
     }
-}
+    @media screen and (min-width: 1200px) {
+        &:not(:last-child){
+        margin-right: 50px;
+        }
+    }
 }
 
 .nav__item{
@@ -132,10 +132,12 @@
     font-size: 24px;
     line-height: 1.16;
     color: $accent-color;
-    letter-spacing: 0.03em;
-    margin-right: 93px;
+    letter-spacing: 0.03em;   
+    @media screen and (min-width: 768px) {
+        margin-right: 88px;
+    }
     @media screen and (min-width: 1200px) {
-        margin-right: 90px;
+        margin-right: 93px;
         font-weight: $bold;
         font-size: 26px;
         line-height: 1.19;

@@ -1,19 +1,13 @@
-.footer__box{    
-  margin-left: auto;
-   margin-bottom: 60px;
-   text-align: center;
-  
-  @media screen and (min-width:768px) {
-    margin-bottom: 0;
-   }
+.footer__box{      
+   text-align: center;  
 }
+
 .footer__social{
   display: flex;
 
   @media screen and (max-width:1199px) {
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
   }  
 }
 

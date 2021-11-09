@@ -39,7 +39,9 @@ a{
 }
 
 img {    
-    display: block;  
+    display: block;
+    max-width: 100%;  
+    height: auto;
 }
 
 .social{
@@ -50,6 +52,7 @@ img {
 }
 
 .container{
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;

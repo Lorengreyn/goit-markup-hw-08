@@ -151,16 +151,18 @@
       </div>
     </section>
     <!-- Наша команда -->
+  
     <section class="section section__team">
       <div class="container">
         <h2 class="section__title">Наша команда</h2>
         <ul class='team'>
           <li class="team__item">
             <picture class="team__img">
-              <source media="(max-width: 450px)" srcset="./images/igor-d-@1x.jpg 1x, ./images/igor-d-@2x.jpg 2x" type="image/jpeg"/>
-              <source media="(max-width: 767px)" srcset="./images/igor-m-@1x.jpg 1x, ./images/igor-m-@2x.jpg 2x" type="image/jpeg"/>
-              <source media="(max-width: 1199px)" srcset="./images/igor-t-@1x.jpg 1x, ./images/igor-t-@2x.jpg 2x" type="image/jpeg" />
-              <source media="(min-width: 1200px)" srcset="./images/igor-d-@1x.jpg 1x, ./images/igor-d-@2x.jpg 2x" type="image/jpeg"/>
+              <source media="(min-width: 1200px)" srcset="./images/igor-d-@1x.jpg 1x, ./images/igor-d-@2x.jpg 2x"/>
+              <source media="(min-width: 768px)" srcset="./images/igor-t-@1x.jpg 1x, ./images/igor-t-@2x.jpg 2x" />
+              <source media="(min-width: 480px)" srcset="./images/igor-m-@1x.jpg 1x, ./images/igor-m-@2x.jpg 2x"/>
+              <!--Только при таком медиа запросе происходит плавное изменение отрисовки картинки. Иначе применяется десктопная картинка, которая значительно меньше. В следствии чего происходит "скачок"-->
+              <source media="(max-width:479px)"  srcset="./images/igor-m-@1x.jpg 1x, ./images/igor-m-@2x.jpg 2x"/>            
             <img
               src="./images/igor-d-@1x.jpg"
               alt="Игорь Демьяненко"
@@ -203,10 +205,11 @@
           </li>
           <li class="team__item">
             <picture class="team__img">
-              <source media="(max-width: 450px)" srcset="./images/olha-d-@1x.jpg 1x, ./images/olha-d-@2x.jpg 2x" type="image/jpeg" />
-              <source media="(max-width: 767px)" srcset="./images/olha-m-@1x.jpg 1x, ./images/olha-m-@2x.jpg 2x" type="image/jpeg" />
-              <source media="(max-width: 1199px)" srcset="./images/olha-t-@1x.jpg 1x, ./images/olha-t-@2x.jpg 2x"  type="image/jpeg" />
-              <source media="(min-width: 1200px)" srcset="./images/olha-d-@1x.jpg 1x, ./images/olha-d-@2x.jpg 2x" type="image/jpeg"/>
+              <source media="(min-width: 1200px)" srcset="./images/olha-d-@1x.jpg 1x, ./images/olha-d-@2x.jpg 2x"/>
+              <source media="(min-width: 768px)" srcset="./images/olha-t-@1x.jpg 1x, ./images/olha-t-@2x.jpg 2x"/>
+              <source media="(min-width: 480px)" srcset="./images/olha-m-@1x.jpg 1x, ./images/olha-m-@2x.jpg 2x"/>
+              <!--Только при таком медиа запросе происходит плавное изменение отрисовки картинки. Иначе применяется десктопная картинка, которая значительно меньше. В следствии чего происходит "скачок"-->
+              <source media="(max-width:479px)" srcset="./images/olha-m-@1x.jpg 1x, ./images/olha-m-@2x.jpg 2x"/>              
             <img
               src="./images/olha-d-@1x.jpg"
               alt="Ольга Репина"
@@ -250,10 +253,11 @@
 
           <li class="team__item">
             <picture class="team__img">
-              <source media="(max-width: 450px)" srcset="./images/nikolay-d-@1x.jpg 1x, ./images/nikolay-d-@2x.jpg 2x" type="image/jpeg"/>
-              <source media="(max-width: 767px)" srcset="./images/nikolay-m-@1x.jpg 1x, ./images/nikolay-m-@2x.jpg 2x"  type="image/jpeg"/>
-              <source media="(max-width: 1199px)" srcset="./images/nikolay-t-@1x.jpg 1x, ./images/nikolay-t-@2x.jpg 2x"   type="image/jpeg"/>
-              <source media="(min-width: 1200px)" srcset="./images/nikolay-d-@1x.jpg 1x, ./images/nikolay-d-@2x.jpg 2x" type="image/jpeg" />
+              <source media="(min-width: 1200px)" srcset="./images/nikolay-d-@1x.jpg 1x, ./images/nikolay-d-@2x.jpg 2x" />
+              <source media="(min-width: 768px)" srcset="./images/nikolay-t-@1x.jpg 1x, ./images/nikolay-t-@2x.jpg 2x"  />
+              <source media="(min-width: 480px)" srcset="./images/nikolay-m-@1x.jpg 1x, ./images/nikolay-m-@2x.jpg 2x" /> 
+              <!--Только при таком медиа запросе происходит плавное изменение отрисовки картинки. Иначе применяется десктопная картинка, которая значительно меньше. В следствии чего происходит "скачок"-->
+              <source media="(max-width:479px)"  srcset="./images/nikolay-m-@1x.jpg 1x, ./images/nikolay-m-@2x.jpg 2x" />            
             <img
               src="./images/nikolay-d-@1x.jpg"              
               alt="Николай Тарасов"
@@ -296,10 +300,11 @@
           </li>
           <li class="team__item">
             <picture class="team__img">
-              <source media="(max-width: 450px)" srcset="./images/mihail-d-@1x.jpg 1x, ./images/mihail-d-@2x.jpg 2x" type="image/jpeg"/>
-              <source media="(max-width: 767px)" srcset="./images/mihail-m-@1x.jpg 1x, ./images/mihail-m-@2x.jpg 2x" type="image/jpeg"/>
-              <source media="(max-width: 1199px)" srcset="./images/mihail-t-@1x.jpg 1x, ./images/mihail-t-@2x.jpg 2x" type="image/jpeg" />
-              <source media="(min-width: 1200px)" srcset="./images/mihail-d-@1x.jpg 1x, ./images/mihail-d-@2x.jpg 2x" type="image/jpeg"/>
+              <source media="(min-width: 1200px)" srcset="./images/mihail-d-@1x.jpg 1x, ./images/mihail-d-@2x.jpg 2x"/>
+              <source media="(min-width: 768px)" srcset="./images/mihail-t-@1x.jpg 1x, ./images/mihail-t-@2x.jpg 2x" />
+              <source media="(min-width: 480px)" srcset="./images/mihail-m-@1x.jpg 1x, ./images/mihail-m-@2x.jpg 2x"/>
+              <!--Только при таком медиа запросе происходит плавное изменение отрисовки картинки. Иначе применяется десктопная картинка, которая значительно меньше. В следствии чего происходит "скачок"-->
+              <source media="(max-width:479px)" srcset="./images/mihail-m-@1x.jpg 1x, ./images/mihail-m-@2x.jpg 2x"/>
             <img
               src="./images/mihail-d-@1x.jpg"              
               alt="Михаил Ермаков"

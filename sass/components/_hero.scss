@@ -1,5 +1,5 @@
 .hero{
-  display: flex;
+  
     text-align: center;
       align-items: center;
       justify-content: center;
@@ -7,8 +7,7 @@
     padding: 118px 0;
     background-color: $footer-color;
     max-width: 1600px;
-    min-width: 320px;
-    height: 400px;    
+    min-width: auto;     
     background-color: $footer-color;
     background-repeat: no-repeat;
     background-position: center;
@@ -34,7 +33,7 @@
     url("../images/backgraund-m-@2x.jpg");
     
   }
-
+  
 
     @media screen and (min-width: 768px) {
       

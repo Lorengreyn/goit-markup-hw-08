@@ -380,7 +380,7 @@ button {
   display: block;
   position: relative;
   margin-top: auto;
-  margin-bottom: 64px;
+  margin-bottom: 60px;
 }
 
 .contacts__item:not(:last-child) {
@@ -933,10 +933,10 @@ button {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio__item {
-    flex-basis: calc(100% / 2 - 60px);
+    flex-basis: calc(100% / 2 - 15px);
   }
-  .portfolio__item:nth-child(2n+2) {
-    margin-left: 30px;
+  .portfolio__item:nth-child(2n+1) {
+    margin-right: 30px;
   }
   .portfolio__item:not(:last-child) {
     margin-bottom: 30px;
@@ -944,9 +944,6 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
-  .portfolio__item {
-    flex-basis: calc(100% / 3 - 60px);
-  }
   .portfolio__item:nth-child(-n+6) {
     margin-bottom: 30px;
   }
